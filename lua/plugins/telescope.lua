@@ -2,6 +2,31 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		cmd = "Telescope",
+		opts = {
+			defaults = {},
+			pickers = {
+				find_files = {
+					mappings = {
+						i = {
+							["<C-.>"] = function(prompt_bufnr)
+								require("utils.telescope").toggle_hidden(prompt_bufnr)
+							end,
+						},
+					},
+				},
+			},
+			extensions = {
+				file_browser = {
+					mappings = {
+						i = {
+							["<C-.>"] = function(prompt_bufnr)
+								require("utils.telescope").toggle_hidden(prompt_bufnr)
+							end,
+						},
+					},
+				},
+			},
+		},
 		keys = {
 			{
 				"<leader>ff",

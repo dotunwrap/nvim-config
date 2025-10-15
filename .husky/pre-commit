@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# FORMATTING CHECK
+echo "Checking formatting..."
+
+if ! command -v stylua &> /dev/null; then
+  echo "stylua not installed"
+  exit 1
+fi
+
+mapfile -t staged_lua_files < <(git diff --cached --name-only --diff-filter=ACMR -- '*.lua')
+
+if [ ${#staged_lua_files[@]} -eq 0 ]; then
+  echo "No staged Lua files to check."
+  exit 0
+fi
+
+stylua --check "${staged_lua_files[@]}"
+
+echo "All Lua files match stylua formatting rules!"

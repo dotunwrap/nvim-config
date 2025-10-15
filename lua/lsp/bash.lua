@@ -1,8 +1,8 @@
 return {
-  ensure_installed = { 'bashls' },
-  servers = {
-    bashls = {
-      config = {},
-    },
-  },
+	ensure_installed = { "bashls" },
+	servers = {
+		bashls = {
+			config = {},
+		},
+	},
 }

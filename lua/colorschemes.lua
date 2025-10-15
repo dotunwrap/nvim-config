@@ -2,7 +2,7 @@ local M = {}
 
 M.config = {
 	gruvbox = function()
-		return 'gruvbox'
+		return "gruvbox"
 	end,
 }
 

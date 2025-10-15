@@ -1,8 +1,8 @@
 return {
-  ensure_installed = { 'astro' },
-  servers = {
-    astro = {
-      config = {},
-    },
-  },
+	ensure_installed = { "astro" },
+	servers = {
+		astro = {
+			config = {},
+		},
+	},
 }

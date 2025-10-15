@@ -1,8 +1,8 @@
 return {
-  ensure_installed = { 'tailwindcss' },
-  servers = {
-    tailwindcss = {
-      config = {},
-    },
-  },
+	ensure_installed = { "tailwindcss" },
+	servers = {
+		tailwindcss = {
+			config = {},
+		},
+	},
 }

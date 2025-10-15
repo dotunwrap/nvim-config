@@ -8,7 +8,7 @@
 
 local config = {
 	theme = {
-		colorscheme = 'gruvbox',
+		colorscheme = "gruvbox",
 	},
 }
 
@@ -16,8 +16,8 @@ local config = {
 
 vim.loader.enable()
 
-require('globals')
-require('options')
-require('config.lazy')
-require('keymaps')
-require('colorschemes').set(config.theme.colorscheme)
+require("globals")
+require("options")
+require("config.lazy")
+require("keymaps")
+require("colorschemes").set(config.theme.colorscheme)

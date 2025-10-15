@@ -1,6 +1,6 @@
 return {
-  {
-    'folke/which-key.nvim',
-    events = 'VeryLazy',
-  },
+	{
+		"folke/which-key.nvim",
+		events = "VeryLazy",
+	},
 }

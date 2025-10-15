@@ -1,8 +1,8 @@
 return {
-  ensure_installed = { 'yamlls' },
-  servers = {
-    yamlls = {
-      config = {},
-    },
-  },
+	ensure_installed = { "yamlls" },
+	servers = {
+		yamlls = {
+			config = {},
+		},
+	},
 }

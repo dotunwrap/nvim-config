@@ -5,7 +5,11 @@ return {
 		opts = {
 			defaults = {},
 			pickers = {
+				live_grep = {
+					theme = "ivy",
+				},
 				find_files = {
+					theme = "ivy",
 					mappings = {
 						i = {
 							["<C-.>"] = function(prompt_bufnr)
@@ -17,6 +21,7 @@ return {
 			},
 			extensions = {
 				file_browser = {
+					theme = "ivy",
 					mappings = {
 						i = {
 							["<C-.>"] = function(prompt_bufnr)

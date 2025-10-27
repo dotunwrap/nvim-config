@@ -77,7 +77,7 @@ return {
 			{
 				"<leader>ft",
 				function()
-					require("telescope").extensions.file_browser.file_browser()
+					require("telescope").extensions.file_browser.file_browser({ grouped = true })
 				end,
 				desc = "File tree",
 			},

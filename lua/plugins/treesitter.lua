@@ -17,4 +17,8 @@ return {
 			configs.setup(opts)
 		end,
 	},
+	{
+		"JoosepAlviste/nvim-ts-context-commentstring",
+		opts = {},
+	},
 }
